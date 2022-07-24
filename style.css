@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#efefef, #0f63c2);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#divForm {
+    width: 100vw;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px #000;
+    padding: 20px 20px;
+    background-color: rgb(185, 204, 207);
+    transition: .5s;
+    opacity: 0.9;
+    width: 35%;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+form>input {
+    text-align: center;
+    box-shadow: 0 0 10px yellow;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 8px;
+    flex-grow: 1;
+    margin: 2px;
+    background-color: rgb(127, 85, 141);
+    color: white;
+}
+
+form>input:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: inset 0px 0px 30px rgb(68, 132, 142);
+    border: 2px solid yellow;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 20px #000;
+    background-color: rgb(185, 204, 207);
+    transition: .5s;
+    opacity: 0.9;
+    width: 35%;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+#form>label {
+    color: black;
+    text-shadow: 0 0 10px yellow;
+}
+
+#form>label:hover {
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+#form p {
+    text-align: center;
+    box-shadow: 0 0 10px yellow;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    height: 18px;
+    position: relative;
+    background-color: rgb(127, 85, 141);
+    color: white;
+}
+
+.whiteWash {
+    display: none;
+}
+
+#form p:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: inset 0px 0px 30px rgb(68, 132, 142);
+    border: 2px solid yellow;
+}
+
+@media screen and (max-width: 750px) {
+    #form {
+        width: 80%;
+    }
+
+    body {
+        background: linear-gradient(#efefef, #0f63c2);
+        background-repeat: no-repeat;
+        height: 120vh;
+    }
+}
