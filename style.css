@@ -101,7 +101,7 @@ form>input:hover {
 }
 
 @media screen and (max-width: 750px) {
-    #form {
+    #form, form {
         width: 80%;
     }
 
