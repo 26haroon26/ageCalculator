@@ -30,13 +30,17 @@ function agecalculater() {
     let dayName = nextbirthday.slice(0, 3);
     nextbirthday = nextbirthday.slice(4, 15);
 
-    if (year === 0) {
-        if (month > 0) {
-            document.getElementById('completeAge').innerHTML = month + " months " + day + " days old"
+   if (year === 0) {
+        if (month > 0 && day > 0) {
+            document.getElementById('completeAge').innerHTML = month + " months " + day + " days old";
         }
-        else if (month === 0) {
-            document.getElementById('completeAge').innerHTML = day + " days old"
+        else if (month === 0 && day > 0) {
+            document.getElementById('completeAge').innerHTML = day + " days old";
         }
+        else if (month > 0 && day <= 0) {
+            document.getElementById('completeAge').innerHTML = Math.floor(todayDate.getTime() / (1000 * 60 * 60 * 24)) - (userAge.getTime() / (1000 * 60 * 60 * 24)) + " days old";
+        }
+
     }
     else {
         document.getElementById('completeAge').innerHTML = year + " years " + month + " months " + day + " days old";
